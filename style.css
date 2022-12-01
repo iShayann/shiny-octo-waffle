@@ -1,0 +1,96 @@
+#mainDiv {
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    perspective: 800px;
+}
+
+#boxDiv {
+    width: 400px;   
+    transform-style: preserve-3d; 
+    animation: rotate 15s linear infinite;
+}
+
+#boxDiv div {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    opacity: 0.9 ;
+    color: white;
+}
+
+#front {
+    transform: translateZ(200px);
+    background: black;
+    background-image: url(https://scontent.cdninstagram.com/v/t1.15752-9/317221070_1229873214539153_1364044381842647504_n.jpg?stp=dst-jpg_p552x414&_nc_cat=100&ccb=1-7&_nc_sid=5a057b&_nc_ohc=SamcOnzN1DAAX-H2NsO&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdR6PHhakEPX6eyLF4PO1P6b7pCIRQV4f9OaBNBKuCkOtg&oe=63AEF1AD );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px ;
+}
+
+
+#back {
+    transform: rotateY(180deg) translateZ(200px);
+    background: #101010;
+    background-image: url(https://scontent.cdninstagram.com/v/t1.15752-9/317122162_442312304568209_1939336318323723259_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5a057b&_nc_ohc=oJHAvkcUaaEAX8fYuaq&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdTrVsLTgv3EsCVBExBcSi7CxoOVBpUE0LkmHAZ4JUpwFw&oe=63AEF3E3 );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px ;   
+}
+
+#left {
+    transform: rotateY(-90deg) translateX(-200px);
+    transform-origin: left;
+    background: black;
+    background-image: url(https://scontent.cdninstagram.com/v/t1.15752-9/316984910_556658622955546_7716329426808076137_n.jpg?stp=dst-jpg_p600x600&_nc_cat=102&ccb=1-7&_nc_sid=5a057b&_nc_ohc=Igz07ay0KLcAX-OTKg1&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdT0FqEMzYAgDyG_NzaoiItHiZCfhKMx80gkbH_pNukV3w&oe=63AF00FE );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px ;  
+}
+
+#right {
+    transform: rotateY(90deg) translateX(200px);
+    transform-origin: right;
+    background: #101010;  
+    background-image: url(https://scontent.cdninstagram.com/v/t1.15752-9/316747327_651508979965054_9220713401728703204_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=5a057b&_nc_ohc=1G_HOQEjV-YAX-oZjnu&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdTmxt_gbvt4RboQzGRtJfqcaIm_0oHSX19sXqgNjBWZjQ&oe=63AF1F39 );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px ;  
+}
+
+#top {
+    transform: rotateX(-90deg) translateY(-200px);
+    transform-origin: top;
+    background: black;
+    background-image: url(https://assets.zyrosite.com/A0xQvay03Xh66BoG/new%20POLITICALLY%20AWAKENED%202-A0xbkaxwqNIL86wv.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px ;   
+}
+
+#bottom {
+    transform: rotateX(90deg) translateY(200px);
+    transform-origin: bottom;
+    background: #101010; 
+    background-image: url(https://assets.zyrosite.com/A0xQvay03Xh66BoG/new%20POLITICALLY%20AWAKENED%202-A0xbkaxwqNIL86wv.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px ;   
+}
+
+@keyframes rotate {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(360deg); }
+}
+
+
+.shadow {
+    
+    
+    width:400px;
+    height:400px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 0 50px 50px rgba(0,0,0,0.5);
+    -webkit-transform: rotateX(90deg) translateZ(-250px) rotateY(180deg) translateX(0px);
+
+}
